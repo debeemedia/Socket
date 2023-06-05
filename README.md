@@ -12,5 +12,5 @@
 * Mr Ekene
 * Mr Johnson Promise (JP)
 * Mr Patrick
-### [VIEW MY CLONE](https://debeemedia.github.io/Socket/)
+### [VIEW LIVE SOCKET](https://debeemedia.github.io/Socket/)
 ## This is a work of LM TechHub.
