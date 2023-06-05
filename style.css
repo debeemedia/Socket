@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(81, 185, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    border: 10px outset #f3f1f1;
+}
+
+.top-hole {
+    background-color: #000;
+    height: 45px;
+    width: 20px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-left-hole {
+    background-color: #000;
+    height: 20px;
+    width: 45px;
+    position: absolute;
+    left: 20%;
+    bottom: 30%; 
+}
+
+.bottom-right-hole {
+    background-color: #000;
+    height: 20px;
+    width: 45px;
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+}
+
+.light {
+    background-color: #9e2d04;
+    height: 20px;
+    width: 55px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    opacity: .5;
+}
+
+.left-screw {
+    height: 20px;
+    width: 20px;
+    background-color: #484747;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    border-radius: 50%;
+    border: 5px outset silver;
+}
+
+.right-screw {
+    height: 20px;
+    width: 20px;
+    background-color: #484747;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    border-radius: 50%;
+    border: 5px outset silver;
+}
+
+.switch {
+    background: rgb(233, 230, 230);
+    height: 90px;
+    width: 45px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    /* border: 10px groove; */
+    box-shadow: 1px 2px 3px 1px rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.switch:active {
+    border-top: 25px ridge #fe6831;
+    box-shadow: -1px 0px 2px 1px rgb(37, 37, 37);
+}
+
+.switch:active ~ .light {
+    opacity: 1;
+    background-color: orangered;
+}
+
+.switch:active::before {
+    content: 'ON';
+    color: white;
+    position: absolute;
+    top: -25px;
+    left: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
